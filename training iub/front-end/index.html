@@ -1,0 +1,101 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Înscriere - Campionat de fotbal</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script> -->
+    <meta name="description" content="Formular de inscriere - Campionat de fotbal - Academia Speranței, ediția de iarnă 2018">
+    <meta property="og:url" content="https://hope.sisc.ro/inscriere" />
+    <meta property="og:title" content="Academia Speranței - Campionat de fotbal" />
+    <meta property="og:description" content="Completează chiar acum formularul de înscriere!" />
+    <meta property="og:image" content="assets/images/fotbal.jpg" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Arya" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/materialize.min.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="icon" type="image/png" href="../_assets/img/sisc-favicon.png" sizes="32x32">
+
+    <link rel="icon" type="image/png" href="../../assets/img/sisc-favicon.png" sizes="32x32">
+</head>
+
+<body>
+    
+    <div id="form-bg" class="formular bg">
+
+        <form id="register_form" class="bgformular formwidth center-align"  class="form-signin">
+          <!--  <div = "register_form" id="register_form" enctype="multipart/form-data"/> -->
+            <div class="textform">
+                <h2 class="form-signin-heading flow-text">Înscriere - Campionat de fotbal</h2>
+                <hr>
+            </div>
+
+            <div id="errors-container" class="errors-container"></div>
+
+                <div class="input-field">
+                    <input type="text"  id="nume" name="nume" oninput="setCustomValidity('')" class="form-control validate"><br></br>
+                    <label for="nume">Nume
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text"  id="prenume" name="prenume" oninput="setCustomValidity('')" class="form-control validate"><br></br>
+                    <label for="nume">Prenume
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="text"  id="telefon" name="telefon" oninput="setCustomValidity('')" class="form-control validate"><br></br>
+                    <label for="telefon">Telefon
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+
+                <div class="input-field">
+                    <input type="email"  id="email" name="email" oninput="setCustomValidity('')" class="form-control validate"><br></br>
+                    <label for="email" data-error="Completeaza" data-success="Corect">Mail
+                        <span class="red-text"> *</span>
+                    </label>
+                </div>
+
+            <div class="submit">
+                <input type="checkbox" oninput="setCustomValidity('')" id="gdpr" />
+                <label for="gdpr">Sunt de acord cu termenii și condițiile <a href="GDPR.pdf" target="_blank"><b>de prelucrare a datelor personale</b><span
+                            class="red-text"> *</span></a></label>
+            </div>
+
+            <div class="submit">
+                    <input type="checkbox" oninput="setCustomValidity('')" id="termeni_conditii" />
+                    <label for="termeni_conditii">Sunt de acord cu termenii și condițiile <a href="Regulament fotbal.pdf" target="_blank"><b>regulamentului</b><span
+                                class="red-text"> *</span></a></label>
+                </div>
+    
+    
+                <div class="submit">
+                   <button name="submit" id="regbutton" class="btn btn-lg btn-primary btn-block">Înscriere</button>         
+                </div>
+
+        </form>
+
+
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Aici se importa axios si toastr care arunca erorile -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/post.js"></script> -->
+
+  
+
+
+</body>
+
+</html>
+
